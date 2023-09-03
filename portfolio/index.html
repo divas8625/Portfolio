@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Poppins font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300;1,600&family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <h1 class="logo"><span>P</span>ort<span>F</span>olio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hey, I am <span>Divas</span><br>from MMMUT</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------about-------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am an experienced full stack developer with a passion for designing and developing web
+                        applications. Proficient in HTML, CSS, and JavaScript, I create visually appealing and
+                        interactive user interfaces using frameworks like React.</p>
+                    <br>
+                    <p>On the back-end, I work with technologies like Node.js, along with databases such as MySQL and
+                        MongoDB. Committed to delivering exceptional web experiences, I am excited about contributing my
+                        skills to innovative projects</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Proficient in HTML, CSS, and JavaScript.</li>
+                            <li><span>Competitive Programmer</span><br>250+ Questions on Leetcode</li>
+                            <li><span>App Developer</span><br>Can create efficient products.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br> Created several website designs</li>
+                            <li><span>2021-2022</span><br>Intern for Web Development</li>
+                            <li><span>2021-2021</span><br>Developed web applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech-Electrical Engineering(2020-2024)</span><br>from MMMUT-7.9cgpa</li>
+                            <li><span>Class XII(2019)</span><br>St. Xavier's Inter College-83.1%</li>
+                            <li><span>Class X (2017)</span><br>
+                                St. Xavier's Inter College- 9.6cgpa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------Services---------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Developer</h2>
+                    <p>As a Front-end Developer, I create engaging and intuitive user interfaces that enhance the
+                        client's web experience through innovative design and seamless functionality.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Designer</h2>
+                    <p>As a Graphic Designer, I bring ideas to life through visually captivating designs that
+                        effectively communicate your brand's message and capture your target audience's attention.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i></i>
+                    <h2>Back-End Developer</h2>
+                    <p>As a Backend Developer, I develop and manage the server-side of web applications, ensuring
+                        seamless data processing, robust functionality, and secure server operations.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------Portfolio--------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, impedit maiores? Alias
+                            fugiat omnis vitae.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, impedit maiores? Alias
+                            fugiat omnis vitae.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, impedit maiores? Alias
+                            fugiat omnis vitae.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------------------Contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>divas8625@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9082412748</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/divas-pathak-9b3a58205/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=" https://github.com/divas8625" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com/dsaurabhp"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/divas_pathak/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="img/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class=" btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Divas. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-- <link rel="script" href="script.js"> -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
